@@ -25,5 +25,3 @@ Voor de tooling van deze app heb ik devolgende npm packages gebruikt:
     - Deze npm-package zorgt ervoor dat alles binnen de server ge-compressed wordt. Hierdoor wordt de response vanaf de server sneller. Ook heeft dit binnen de audit 3 punten toegevoegd aan ***Performance***
     - Voor Compression <img src="https://github.com/muise001/performance-matters-1819/blob/master/images/voor-compression.png">
     - Na Compression <img src="https://github.com/muise001/performance-matters-1819/blob/master/images/na-compression.png">
-
-Installeer en implementeer de tooling voor je app. Je kan hierbij kiezen hierbij voor bijvoorbeeld een workflow met NPM scripts, CommonJS en Browserify.
