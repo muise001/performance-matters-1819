@@ -5,11 +5,13 @@ const bodyParser = require('body-parser')
 const app = express()
 const parser = bodyParser.urlencoded({extended: false})
 const fetch = require("node-fetch");
+const compression = require("compression")
 let data = ""
 let zoekOpdracht = []
 let dataName = ""
 
 app.set('view engine', 'ejs');
+app.use(compression())
 app.use(express.static('public'))
 
 app.get("/", (req, res) => {
