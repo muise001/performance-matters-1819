@@ -1,6 +1,54 @@
 # Opdrachten Week 1
 Minor Web Development - Performance Matters
 
+### Opdracht 1: Pas de OBA app aan naar een server side versie met Node.js & Express
+
+Als App die ik om ging bouwen heb ik mijn oude WAFS-applicatie gebruikt. Deze maakt gebruik van de Giphy API. Ik heb alle Client-Side JS verwijderd en heb de HTML omgeschreven naar EJS. Daarna heb ik een node-server opgezet. Vanuit de server wordt nu de API aangeroepen en de EJS gegenereerd. 
+
+Stappenplan - server aanzetten
+  1. Ga naar [mijn Repository](https://github.com/muise001/performance-matters-1819/)
+  2. Klik op clone
+  3. Open de GitHub Client App
+  4. Geef toestemming om deze repository te clonen
+  6. Open Terminal en type `cd /Users/[.Mijn.Computer.Naam.]/Documents/GitHub/performance-matters-1819`
+  7. Type dan `npm install`
+  8. Als de install klaar is, type dan `npm start`
+  
+In mijn package.json stond helaas geen `npm start` command. Deze heb ik daarom zelf toegevoegd.
+
+### Opdracht 2: Tooling
+
+Voor de tooling van deze app heb ik devolgende npm packages gebruikt:
+  - node-fetch
+  - compression
+
+Installeer en implementeer de tooling voor je app. Je kan hierbij kiezen hierbij voor bijvoorbeeld een workflow met NPM scripts, CommonJS en Browserify.
+
+Documenteer in je readme.md hoe jij de build heb geïmplementeerd
+
+#### Resources
+[Introduction to NPM scripts](https://medium.freecodecamp.org/introduction-to-npm-scripts-1dbb2ae01633)
+
+### Opdracht 3: Universal / Isomorphic app (extra) 
+
+Met de komst van Node.js is het mogelijk om JavaScript op de server te runnen. Een Universal of Isomorphic app is een app waarvan (een gedeelte van) de code zowel op de client als op de server kan worden gebruikt. Probeer van jouw app een universal app te maken.
+
+
+#### Resources
+[https://github.com/wooorm/dictionary](https://github.com/wooorm/dictionary)
+
+<!-- Bindings -->
+[opdracht1]: https://github.com/cmda-minor-web/performance-matters-1819/blob/master/week-1.md#opdracht-1-pas-de-adamnet-app-aan-naar-een-server-side-versie-met-nodejs--express
+[opdracht2]: https://github.com/cmda-minor-web/performance-matters-1819/blob/master/week-1.md#opdracht-2-tooling-npm-scripts-commonjs--browserify
+[opdracht3]: https://github.com/cmda-minor-web/performance-matters-1819/blob/master/week-1.md#opdracht-3-universal--isomorphic-app-extra
+
+
+
+--------------------------------------------
+
+# Opdrachten Week 1
+Minor Web Development - Performance Matters
+
 ## Intentie
 Deze week gaan we de client side OBA app ombouwen naar een server side versie. Hiervoor gebruiken we Node.js & Express. Daarnaast gaan we npm gebruiken als build tool en met CommonJS en Browserify optimalisatie doen voor performance.
 
