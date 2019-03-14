@@ -1,0 +1,28 @@
+<% include ./partials/header %>
+
+<section id="detail">
+  <h1>"<%=data.data[num].title%>"</h1>
+  <img alt="<%data.data[num].title%>"; style='width: 80%; margin: 1em 10%;' src= "<%=data.data[num].images.original.url%>">
+  <ol>
+    <li>rating : <%=data.data[num].rating%></li>
+    <li>Geupload op : <%=data.data[num].import_datetime%></li>
+  </ol>
+  <% if(locals.num){ %>
+    <% if(parseInt(num) !== 0) { %>
+      <a href="/search?q=<%=q%>&detail=<%=parseInt(num)-1%>">Back</a>
+    <% } %>
+    <% if(parseInt(num) !== data.data.length-1) { %>
+      <a href="/search?q=<%=q%>&detail=<%=parseInt(num)+1%>">next</a>
+    <% } %>
+  <% } %>
+  <% if(locals.data.data[num].user) { %>
+  <h3>Creator</h3>
+  <ol>
+    <li>uploadert : <%=data.data[num].user.username%></li>
+    <li>user-url : <%=data.data[num].user.profile_url%></li>
+    <li>Twitter : <%=data.data[num].user.twitter%></li>
+  </ol>
+  <%}%>
+</section>
+
+<% include ./partials/footer %>

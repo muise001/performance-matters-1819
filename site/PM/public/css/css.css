@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+section{
+  margin: 1em;
+}
+
+html{
+  background-color: rgb(21,0,46);
+  background-image: url(http://78.media.tumblr.com/7ea3f864e3ff8434d8a875a514496242/tumblr_inline_n258vlhuLn1qhwjx8.png);
+  background-size: 100% auto;
+  background-repeat: repeat-x;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  color: orange
+}
+
+a {
+  text-decoration: none;
+  color: purple
+}
+
+main {
+  display: grid;
+  grid-template-rows: 2fr ;
+  grid-template-columns: 1fr ;
+  padding-bottom: 4em;
+}
+
+footer {
+  display: flex;
+  position: fixed;
+  padding: 1em 0 1em 0;
+  bottom: 0;
+  justify-content: space-around;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.72)
+}
+
+header {
+  text-align: center;
+}
+
+#results {
+  padding-top: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#results div {
+  text-align: center;
+  width: 40%;
+}
+
+#chosenOnes section ol:nth-of-type(1) {
+  margin: 1em;
+}
+
+#chosenOnes section ol:nth-of-type(2) {
+  margin: 2em 2em 8em 2em;
+}
+
+#djKhaled img {
+  width: 80%;
+  margin: 0 10%;
+}
+
+.loader{
+  margin: 0 0 2em;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+svg path,
+svg rect{
+  fill: #00B4CC;
+}
+
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  width: 70%;
+  border: 3px solid #00B4CC;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  position: absolute;
+  right: 10%;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius:  0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.fa-search:before {
+    content: "\f002";
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 60%;
+  position: absolute;
+  top: 6em;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+
+#error {
+  padding: 0.25em;
+  background-color: darkred;
+  border-radius: 1em;
+  width: 50%;
+  margin: 4em 25% 0;
+}
+
+.none {
+  display: none;
+}
+
+#history li{
+  font-size : 0.7em;
+  margin: 1em;
+}
