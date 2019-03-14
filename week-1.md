@@ -1,26 +1,26 @@
 # Opdrachten Week 1
 Minor Web Development - Performance Matters
 
-## Opdrachten
-1. [Bouw de OBA App om naar een server side versie met Node.js & Express][opdracht1]
-2. [Tooling][opdracht2]
-3. [Universal / Isomorphic app (extra)][opdracht3]
-
 ### Opdracht 1: Pas de OBA app aan naar een server side versie met Node.js & Express
 
-Denk bij het aanpassen goed na over wat de MVP (of core functionaliteit) is van de OBA app. Over het algemeen is dat een overview page, met een lijstje met items die elk door linken naar een detail page. Zorg ervoor dat je eerst de HTML genereert vanaf de server, vervolgens kijk je in hoeverre je de CSS kan aanpassen, en tenslotte probeer je de app zoveel mogelijk te enhancen met client side JavaScript. 
+Als App die ik om ging bouwen heb ik mijn oude WAFS-applicatie gebruikt. Deze maakt gebruik van de Giphy API. Ik heb alle Client-Side JS verwijderd en heb de HTML omgeschreven naar EJS. Daarna heb ik een node-server opgezet. Vanuit de server wordt nu de API aangeroepen en de EJS gegenereerd. 
 
-Fork deze repo, en werk daar je server side app uit: [Performance Matters 1819](https://github.com/cmda-minor-web/performance-matters-1819)
-
-Documenteer in je readme.md hoe je de server draaiend krijgt; git clone && npm start 
-
-#### Resources
-* [Introduction to Node.js](https://egghead.io/courses/introduction-to-node-the-fundamentals)
-* [Getting started with Express.js](https://egghead.io/courses/getting-started-with-express-js)
-* [Export modules with Node.js](https://egghead.io/lessons/node-js-export-modules-in-node-js)
-
+Stappenplan - server aanzetten
+  1. Ga naar [mijn Repository](https://github.com/muise001/performance-matters-1819/)
+  2. Klik op clone
+  3. Open de GitHub Client App
+  4. Geef toestemming om deze repository te clonen
+  6. Open Terminal en type `cd /Users/[.Mijn.Computer.Naam.]/Documents/GitHub/performance-matters-1819`
+  7. Type dan `npm install`
+  8. Als de install klaar is, type dan `npm start`
+  
+In mijn package.json stond helaas geen `npm start` command. Deze heb ik daarom zelf toegevoegd.
 
 ### Opdracht 2: Tooling
+
+Voor de tooling van deze app heb ik devolgende npm packages gebruikt:
+  - node-fetch
+  - compression
 
 Installeer en implementeer de tooling voor je app. Je kan hierbij kiezen hierbij voor bijvoorbeeld een workflow met NPM scripts, CommonJS en Browserify.
 
