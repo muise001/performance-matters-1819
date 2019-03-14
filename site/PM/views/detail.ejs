@@ -11,6 +11,7 @@
     <% if(parseInt(num) !== 0) { %>
       <a href="/search?q=<%=q%>&detail=<%=parseInt(num)-1%>">Back</a>
     <% } %>
+      <a href="/search?q=<%=q%>">Home</a>
     <% if(parseInt(num) !== data.data.length-1) { %>
       <a href="/search?q=<%=q%>&detail=<%=parseInt(num)+1%>">next</a>
     <% } %>

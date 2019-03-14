@@ -3,9 +3,9 @@
 <section id="history">
   <h1>Zoekgeschiedenis</h1>
   <!-- <a href="#start" id="oudeZoekOpdracht"></a> -->
-  <% zoekOpdracht.forEach((term, i) => { %>
+  <% zoekGeschiedenis.forEach((term, i) => { %>
     <li>
-      <a href="/search?q=<%=zoekOpdracht[i]%>"><%=zoekOpdracht[i]%></a>
+      <a href="/search?q=<%=term%>"><%=term%></a>
     </li>
   <% })%>
   <ul>

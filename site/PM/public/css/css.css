@@ -1,3 +1,72 @@
+/* *{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1fc8db;
+  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  margin-bottom: 5rem;
+}
+
+.none {
+  display: none;
+}
+
+header, h1 {
+  text-align: center;
+}
+
+#results {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(100px,auto);
+  grid-gap: 1rem;
+  display: grid;
+  padding: 0 3rem;
+}
+
+#results div {
+  background: rgba(255,255,255,0.2);
+  text-align: center;
+}
+
+form {
+  transform: scale(1.4);
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+form button {
+  height: 1.3rem;
+  background: white;
+  border: none;
+  width: 2rem;
+  border-radius: 0 1rem 1rem 0;
+}
+
+form input {
+  border: none;
+  outline: 0;
+  padding-left: 1rem;
+  height: 1.3rem;
+  border-radius: 1rem 0 0 1rem;
+}
+
+footer {
+  display: flex;
+  position: fixed;
+  padding: 1em 0 1em 0;
+  bottom: 0;
+  justify-content: space-around;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.72)
+} */
+
+/*============================== OLD CSS ==============================*/
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 *{

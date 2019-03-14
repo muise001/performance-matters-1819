@@ -1,5 +1,9 @@
     <footer>
-      <a href="/"><p>Start</p></a>
+      <% if(locals.q){ %>
+        <a href="/search?q=<%=q%>">Start</a>
+      <% } else { %>
+        <a href="/"><p>Start</p></a>
+      <% } %>
       <a href="history"><p>Zoekgeschiedenis</p></a>
       <a href="khaled"><p>Khaled</p></a>
     </footer>

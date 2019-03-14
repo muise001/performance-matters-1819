@@ -7,7 +7,7 @@ const parser = bodyParser.urlencoded({extended: false})
 const fetch = require("node-fetch");
 const compression = require("compression")
 let data = ""
-let zoekOpdracht = []
+let zoekGeschiedenis = []
 let dataName = ""
 
 app.set('view engine', 'ejs');
@@ -15,11 +15,15 @@ app.use(compression())
 app.use(express.static('public'))
 
 app.get("/", (req, res) => {
-  res.render('index', {data})
+  if (res.locals.q) {
+    res.render('index', {data, q})
+  } else {
+    res.render('index', {data})
+  }
 })
 
 app.get('/history', (req, res) => {
-  res.render("history", {data, zoekOpdracht})
+  res.render("history", {data, zoekGeschiedenis})
 })
 
 app.get('/khaled', (req, res) => {
@@ -40,8 +44,13 @@ app.get("/search", (req,res) => {
       res.render('detail', {data, num: req.query.detail, q: req.query.q})
     }
   } else if (req.query.q){
-    dataName = req.query.q
-    getData(req.query.q, req, res)
+      if (req.query.q === dataName){
+        res.render('index', {data, q: req.query.q})
+      } else {
+        dataName = req.query.q
+        getData(req.query.q, req, res)
+      }
+      dataName = req.query.q
   } else {
     res.render("index", {data})
   }
@@ -49,7 +58,7 @@ app.get("/search", (req,res) => {
 
 
 function getData(searchValue, req, res, num, bool) {
-  zoekOpdracht.push(searchValue)
+  zoekGeschiedenis.push(searchValue)
   fetch(`https://api.giphy.com/v1/gifs/search?q=${searchValue}&api_key=bMIPWUm5uWlqwJDmZPxDw4dKGzDZfGdd&limit=8`)
     .then(resp => resp.json())
     .then(resp => {
