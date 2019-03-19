@@ -57,13 +57,13 @@ app.get("/search", (req,res) => {
 })
 
 
-function getData(searchValue, req, res, num, bool) {
+function getData(searchValue, req, res, num, detail) {
   zoekGeschiedenis.push(searchValue)
   fetch(`https://api.giphy.com/v1/gifs/search?q=${searchValue}&api_key=bMIPWUm5uWlqwJDmZPxDw4dKGzDZfGdd&limit=8`)
     .then(resp => resp.json())
     .then(resp => {
       data = resp
-      if(bool) {
+      if(detail) {
         res.render('detail', {data: resp, num, q: searchValue})
       }
       else {
