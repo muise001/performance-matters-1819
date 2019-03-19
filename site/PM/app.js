@@ -6,11 +6,15 @@ const app = express()
 const parser = bodyParser.urlencoded({extended: false})
 const fetch = require("node-fetch");
 const compression = require("compression")
+
 let data = ""
 let zoekGeschiedenis = []
 let dataName = ""
 
 app.set('view engine', 'ejs');
+app.use((req, res, next) => {
+  res.setHeader('Cache-Control', 'max-age=' + 365 * 24 * 60 * 60); next();
+});
 app.use(compression())
 app.use(express.static('public'))
 
