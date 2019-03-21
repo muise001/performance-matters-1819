@@ -96,6 +96,14 @@ Na een tijdje copy-pasten en google'en ben ik op hetvolgende uitgekomen
 
 Als ik nu `npm start` type, dan voert hij alles uit en ook nog in de goede volgoorde!!
 
+Na al deze veranderingen is mijn page-render met meer dan `3s` sneller geworden op slow 3G :
+
+Voor veranderingen
+<img src="https://github.com/muise001/performance-matters-1819/blob/master/images/voor%20cache.png">
+
+Na veranderingen
+<img src="https://github.com/muise001/performance-matters-1819/blob/master/images/na%20cache.png">
+
 ### Image loading
 
 Mijn app - een gif-loader - haalt een aantal afbeeldingen op na aanleiding van een zoekopdracht. Van elke "gif" die ik ophaalde, haalde ik altijd het grootste bestand op. Dit vond ik mooi. Maar qua performance is het niet de beste oplossing.
