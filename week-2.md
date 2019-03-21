@@ -141,3 +141,10 @@ Daarna ben ik het `<picture>` element gaan gebruiken. Mijn code is er wel wat gr
 ```
 
 Hieronder zie je afbeeldingen van "voor" en "na" deze verandering
+
+Voor:
+<img src="https://github.com/muise001/performance-matters-1819/blob/master/images/img%20voor.png">
+
+Na:
+<img src="https://github.com/muise001/performance-matters-1819/blob/master/images/image%20loadin%20on%20size.png">
+
