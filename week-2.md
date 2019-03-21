@@ -3,7 +3,7 @@ Minor Web Development - Performance Matters
 
 ### Opdracht 1: Optimaliseer de performance van jou applicatie
 
-Voor deze opdracht heb ik me gefocussed op de twee dikgedrukte onderdelen in de lijst hieronder.
+Voor deze opdracht heb ik me gefocussed op de twee dikgedrukte onderdelen in de lijst hieronder. Maar de "Time to first byte" en "Runtime performance" zijn hierdoor ook verbeterd
 
 * First view  
 * Repeat view  
