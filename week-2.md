@@ -148,3 +148,6 @@ Voor:
 Na:
 <img src="https://github.com/muise001/performance-matters-1819/blob/master/images/image%20loadin%20on%20size.png">
 
+### Over-all performance na week 2
+<img src="https://github.com/muise001/performance-matters-1819/blob/master/images/performance%20week%202.png">
+
