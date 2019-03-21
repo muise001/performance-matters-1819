@@ -7,5 +7,4 @@ gulp.src(["public/" + '**/*.{css,js}' ])
   .pipe(rev())
   .pipe(gulp.dest(inputDir))
   .pipe(rev.manifest(manifestFilename))
-  // .pipe(hash())
   .pipe(gulp.dest(inputDir));
