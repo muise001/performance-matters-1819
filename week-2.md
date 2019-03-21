@@ -74,6 +74,8 @@ gulp.src('cache/css/*.css')
 
 Nu zit nogsteeds het bestand (`css-ergoierh284.css`) in mijn cache map. Alleen is hij nu geminified!
 
+***Door deze verandering is mijn css van `1.6K B` naar `886 B` gegaan!***
+
 Maar... om zowel `gulp-rev` als `gulp-clean-css` uit te voeren moet ik in mijn console het volgende typen.
   ```
   npm run revision
