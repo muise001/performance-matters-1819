@@ -17,6 +17,7 @@
     "compression": "^1.7.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "gulp-clean": "^0.4.0",
     "gulp-imagemin": "^5.0.3",
     "gulp-uglify": "^3.0.2",
     "http": "0.0.0",

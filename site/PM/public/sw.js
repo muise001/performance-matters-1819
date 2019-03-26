@@ -12,7 +12,4 @@ fetch("./rev-manifest.JSON")
       .catch(err => console.log("hallo"))
     })
   }
-
-
-
 })
