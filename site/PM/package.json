@@ -6,8 +6,9 @@
     "test": "]",
     "start": "npm run revision && nodemon app.js",
     "postbuild": "npm run revision",
-    "revision": "node tasks/revision-hash.js && node tasks/revision-mincss.js",
-    "mincss": "node tasks/revision-mincss.js"
+    "revision": "node tasks/revision-hash.js && npm run mincss && npm run minimg",
+    "mincss": "node tasks/revision-mincss.js",
+    "minimg": "node tasks/revision-image.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,8 @@
     "compression": "^1.7.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-uglify": "^3.0.2",
     "http": "0.0.0",
     "node-fetch": "^2.3.0",
     "shrinkray": "^1.1.2"
