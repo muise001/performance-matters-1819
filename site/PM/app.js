@@ -54,7 +54,6 @@ app.get("/search", (req,res) => {
       dataName = req.query.q
       getData(dataName, req, res, req.query.detail, true)
     } else {
-      console.log("detail");
       res.render('detail', {data, num: req.query.detail, q: req.query.q})
     }
   } else if (req.query.q){
