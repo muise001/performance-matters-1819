@@ -40,7 +40,13 @@
               <div>
                 <h3><%=data.title%></h3>
                 <a href="/search?q=<%=q%>&detail=<%=i%>">
-                  <img alt='<%=data.title%>'; style='width:60%; min-width:8em;' src='<%=data.images.original.url%>'>
+                  <picture>
+                    <source media="(min-width: 1024px)" srcset=<%=data.images.downsized_large.url%>>
+                    <source type="image/webp" media="(min-width: 600px)" srcset=<%=data.images.preview_webp.url%>>
+                    <source media="(min-width: 600px)" srcset=<%=data.images.downsized_medium.url%>>
+                    <source srcset="<%=data.images.fixed_width_small_still.url%>">
+                    <img alt='<%=data.title%>'; style='width:60%; min-width:8em;' src='<%=data.images.original.url%>'>
+                  </picture>
                 </a>
               </div>
             <% }) %>
@@ -53,4 +59,4 @@
       </div>
     </main>
 
-    <% include ./partials/footer %>
+<% include ./partials/footer %>
