@@ -1,4 +1,4 @@
-/* *{
+*{
   padding: 0;
   margin: 0;
   font-family: sans-serif;
@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(to top right, rgba(255, 82, 99, 0.9) 10%, rgba(255, 115, 129, 0.9) 65%, rgba(252, 189, 1, 0.9) 125%);
+  /* background: linear-gradient(to top right, rgba(255, 82, 99, 0.9) 10%, rgba(255, 115, 129, 0.9) 65%, rgba(252, 189, 1, 0.9) 125%); */
   background-color: #1fc8db;
   margin-bottom: 5rem;
 }
@@ -63,11 +63,11 @@ footer {
   justify-content: space-around;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.72)
-} */
+}
 
 /*============================== OLD CSS ==============================*/
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 *{
   padding: 0;
@@ -196,10 +196,10 @@ svg rect{
 
 .fa-search:before {
     content: "\f002";
-}
+} */
 
 /*Resize the wrap to see the search bar change!*/
-.wrap{
+/* .wrap{
   width: 60%;
   position: absolute;
   top: 6em;
@@ -222,4 +222,4 @@ svg rect{
 #history li{
   font-size : 0.7em;
   margin: 1em;
-}
+} */

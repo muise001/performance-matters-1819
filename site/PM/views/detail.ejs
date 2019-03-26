@@ -7,7 +7,7 @@
     <li>rating : <%=data.data[num].rating%></li>
     <li>Geupload op : <%=data.data[num].import_datetime%></li>
   </ol>
-  <% if(locals.num){ %>
+  <% if(locals.num){ %> 
     <% if(parseInt(num) !== 0) { %>
       <a href="/search?q=<%=q%>&detail=<%=parseInt(num)-1%>">Back</a>
     <% } %>

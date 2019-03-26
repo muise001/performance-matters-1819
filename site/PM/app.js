@@ -6,13 +6,27 @@ const app = express()
 const parser = bodyParser.urlencoded({extended: false})
 const fetch = require("node-fetch");
 const compression = require("compression")
+const fs = require("fs")
+const revManifest = '/rev-manifest.json';
+
+
 let data = ""
 let zoekGeschiedenis = []
 let dataName = ""
 
 app.set('view engine', 'ejs');
+app.use((req, res, next) => {
+  res.setHeader('Cache-Control', 'max-age=' + 365 * 24 * 60 * 60); next();
+});
+app.use(function (req, res, next) {
+   res.locals = {
+     css: revUrl("css/css.css"),
+     js: revUrl("js/js.js")
+   };
+   next();
+});
 app.use(compression())
-app.use(express.static('public'))
+app.use(express.static('cache'))
 
 app.get("/", (req, res) => {
   if (res.locals.q) {
@@ -40,7 +54,6 @@ app.get("/search", (req,res) => {
       dataName = req.query.q
       getData(dataName, req, res, req.query.detail, true)
     } else {
-      console.log("detail");
       res.render('detail', {data, num: req.query.detail, q: req.query.q})
     }
   } else if (req.query.q){
@@ -71,6 +84,11 @@ function getData(searchValue, req, res, num, detail) {
       }
     })
     .catch(err => console.log(err))
+}
+
+function revUrl(url) {
+    let fileName = JSON.parse(fs.readFileSync("cache/rev-manifest.json", 'utf8'))
+    return fileName[url]
 }
 
 var server = app.listen(PORT, function() {
