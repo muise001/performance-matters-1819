@@ -21,7 +21,8 @@ app.use((req, res, next) => {
 app.use(function (req, res, next) {
    res.locals = {
      css: revUrl("css/css.css"),
-     js: revUrl("js/js.js")
+     js: revUrl("js/js.js"),
+     sw: revUrl("sw.js")
    };
    next();
 });
