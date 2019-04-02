@@ -78,6 +78,14 @@ footer {
   height: 3rem;
 }
 
+#djKhaled img {
+  width: 80vw
+}
+
+.none{
+  display: none
+}
+
 /*============================== OLD CSS ==============================*/
 
 /* @import url(https://fonts.googleapis.com/css?family=Open+Sans);

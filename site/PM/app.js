@@ -9,7 +9,6 @@ const compression = require("compression")
 const fs = require("fs")
 const revManifest = '/rev-manifest.json';
 
-
 let data = ""
 let zoekGeschiedenis = []
 let dataName = ""
@@ -21,7 +20,9 @@ app.use((req, res, next) => {
 app.use(function (req, res, next) {
    res.locals = {
      css: revUrl("css/css.css"),
-     js: revUrl("js/js.js")
+     js: revUrl("js/js.js"),
+     sw: revUrl("sw.js"),
+     off: revUrl("offline.js")
    };
    next();
 });
@@ -37,6 +38,7 @@ app.get("/", (req, res) => {
 })
 
 app.get('/history', (req, res) => {
+  console.log('history', zoekGeschiedenis)
   res.render("history", {data, zoekGeschiedenis})
 })
 
@@ -45,10 +47,12 @@ app.get('/khaled', (req, res) => {
 })
 
 app.post("/", parser, (req, res) => {
+  console.log('body', req.body)
   res.redirect(`/search?q=${req.body.searchValue}`)
 })
 
 app.get("/search", (req,res) => {
+  zoekGeschiedenis.push(req.query.q)
   if (req.query.q && req.query.detail) {
     if (req.query.q !== dataName) {
       dataName = req.query.q
@@ -71,7 +75,8 @@ app.get("/search", (req,res) => {
 
 
 function getData(searchValue, req, res, num, detail) {
-  zoekGeschiedenis.push(searchValue)
+  // zoekGeschiedenis.push(searchValue)
+  console.log('getData', zoekGeschiedenis)
   fetch(`https://api.giphy.com/v1/gifs/search?q=${searchValue}&api_key=bMIPWUm5uWlqwJDmZPxDw4dKGzDZfGdd&limit=8`)
     .then(resp => resp.json())
     .then(resp => {

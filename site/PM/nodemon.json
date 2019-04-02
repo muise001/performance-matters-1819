@@ -1,0 +1,5 @@
+{
+  "events": {
+    "restart": "npm run revision && osascript -e 'display notification \"Cache Folder Replaced\" with title \"Gulp\"' && osascript -e 'display notification \"Server Restarted\" with title \"Nodemon\"'"
+  }
+}

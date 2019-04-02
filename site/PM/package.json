@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "]",
-    "start": "npm run revision && nodemon app.js",
+    "start": "npm run revision && nodemon app.js --ignore cache/",
     "postbuild": "npm run revision",
     "revision": "node tasks/revision-hash.js && npm run mincss && npm run minimg",
     "mincss": "node tasks/revision-mincss.js",
@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "gulp": "^4.0.0",
+    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-hash": "^4.2.2",
     "gulp-rev": "^9.0.0",
