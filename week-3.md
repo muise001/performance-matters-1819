@@ -1,3 +1,5 @@
+[Check de site hier!](https://performancematters-bnyqcedoko.now.sh/)
+
 # Opdrachten Week 3
 Minor Web Development - Performance Matters
 
