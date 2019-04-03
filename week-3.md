@@ -7,12 +7,12 @@ Met de applicatie die ik gemaakt heb, kan je online grappige plaatjes vinden. Ma
 
 ### De Service Worker
 Als eerste heb ik een service worker [van internet geplukt](https://googlechrome.github.io/samples/service-worker/basic/). Dit werkte erg goed. Alleen vond ik het vervelend dat ik niet precies begreep wat er gebeurde. Ik ben meer onderzoek gaan doen en ben Service-workers beter gaan begrijpen. Een service worker heeft 3 "events".
-  1. Install
-      Hier cache je voor het eerst de bestanden van de website
-  2. Activate
-      Hier kijk je of er nog andere bestanden in de cache staan. Zo ja, dan overschrijf je die. 
-  3. Fetch
-      De Fetch elke keer getriggerd als de url verandert.
+  - **Install**
+      - Hier cache je voor het eerst de bestanden van de website
+  - **Activate**
+      - Hier kijk je of er nog andere bestanden in de cache staan. Zo ja, dan overschrijf je die. 
+  - **Fetch**
+      - De Fetch elke keer getriggerd als de url verandert.
       
 De fetch functie kan je zo schrijven dat elke pagina waar je op komt, opslaat. Dit is ook precies hoe ik het gedaan heb. Er was alleen een probleem waar ik niet uitkwam
 
