@@ -1,3 +1,5 @@
+[Check de site hier!](https://performancematters-gvhtrjhwku.now.sh/)
+
 # Opdrachten Week 1
 Minor Web Development - Performance Matters
 
@@ -219,7 +221,7 @@ Als online feedback heb ik drie features toegevoegd.
 
 ### Opdracht 2: Installeer jou app op een online webserver
 
-[Check de site hier!](https://performancematters-qexlascrix.now.sh/)
+[Check de site hier!](https://performancematters-gvhtrjhwku.now.sh/)
 
 
 ## Overal performance week 3
