@@ -38,3 +38,8 @@ Als online feedback heb ik drie features toegevoegd.
 ### Opdracht 2: Installeer jou app op een online webserver
 
 [Check de site hier!](https://performancematters-qexlascrix.now.sh/)
+
+
+## Overal performance week 3
+
+<img src="https://github.com/muise001/performance-matters-1819/blob/master/images/performance%20week%203.png" />
