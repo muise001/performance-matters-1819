@@ -18,8 +18,16 @@ De fetch functie kan je zo schrijven dat elke pagina waar je op komt, opslaat. D
 
 
 ### Offline Feedback
-
-
+Als online feedback heb ik drie features toegevoegd.
+    - De Popup
+        - De popup toont een gifje waaruit moet blijken dat je geen internet hebt. Daarnaast geeft deze pop-up je een linkje naar de "history" pagina. Deze pagina laat een aantal al eerder gedane zoekopdrachten zien die hij heeft opgeslagen.
+    - Het Icoon
+        - Linksboven in het scherm geef ik een icoon weer die het ook duidelijk maakt dat je geen internet meer hebt
+    - Onbereikbaar Form
+        - Het is niet meer mogelijk om iets te submitten vanuit het zoekformulier. De value van je zoekopdracht wordt dan verandert naar "Geen internet connectie"
+        
+<img src="https://github.com/muise001/performance-matters-1819/blob/master/images/offline%20feedback.png" />
+<img src="https://github.com/muise001/performance-matters-1819/blob/master/images/offline%20feedback2.png" alt="offline"/>
 
 
 ## Bronnen
@@ -27,8 +35,6 @@ De fetch functie kan je zo schrijven dat elke pagina waar je op komt, opslaat. D
 2. [Cache update & Refresh](https://serviceworke.rs/strategy-cache-update-and-refresh_service-worker_doc.html)
 
 
-#### Resources
-
 ### Opdracht 2: Installeer jou app op een online webserver
 
-[Check de site hier!](https://performancematters-bnyqcedoko.now.sh/)
+[Check de site hier!](https://performancematters-qexlascrix.now.sh/)
