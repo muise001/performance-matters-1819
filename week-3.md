@@ -1,38 +1,34 @@
-[Check de site hier!](https://performancematters-bnyqcedoko.now.sh/)
-
 # Opdrachten Week 3
 Minor Web Development - Performance Matters
 
-## Intentie
-Deze week gaan we de ervoor zorgen dat de OBA applicatie offline te gebruiken is.
-
-## Werkwijze
-Er is 12 uur ingeroosterd om deze week zelfstandig aan de opdrachten van dit vaak te werken. Probeer je werk goed te plannen! Tussentijds wordt in standup meetings en klassikale bijeenkomsten de voortgang gemonitord. Aan het eind van de week wordt je op theoretische kennis getoetst en op het begrip van de code die je volgens de opdrachten schrijft.
-
-## Opdrachten
-1. [Implementeer een Service Worker][opdracht1]
-2. [Installeer jou app op een online webserver][opdracht2]
-
-
 ### Opdracht 1: Implementeer een Service Worker
-Bedenk hoe jij de Service Worker wil implementeren in jou OBA app. Maak hiervoor een job story aan. Zorg ervoor dat je in ieder geval een aantal statische assets cached en serveert met de Worker. Geef ook feedback aan de gebruiker over de online/offline state. 
+Met de applicatie die ik gemaakt heb, kan je online grappige plaatjes vinden. Maar wat nou als je bij je oma langsgaat op Schiermonnikoog (waar geen internet is) en je wilt aan je oom - die daar toevallig ook is - een plaatje laten zien die je een paar dagen geleden had gevonden. Hoe doe je dat zonder internet?? ***s*** ***e*** ***r*** ***v*** ***i*** ***c*** ***e*** ***w*** ***o*** ***r*** ***k*** ***e*** ***r***
 
-Vermeld je job story  in de README.md
+
+### De Service Worker
+Als eerste heb ik een service worker [van internet geplukt](https://googlechrome.github.io/samples/service-worker/basic/). Dit werkte erg goed. Alleen vond ik het vervelend dat ik niet precies begreep wat er gebeurde. Ik ben meer onderzoek gaan doen en ben Service-workers beter gaan begrijpen. Een service worker heeft 3 "events".
+  1. Install
+      Hier cache je voor het eerst de bestanden van de website
+  2. Activate
+      Hier kijk je of er nog andere bestanden in de cache staan. Zo ja, dan overschrijf je die. 
+  3. Fetch
+      De Fetch elke keer getriggerd als de url verandert.
+      
+De fetch functie kan je zo schrijven dat elke pagina waar je op komt, opslaat. Dit is ook precies hoe ik het gedaan heb. Er was alleen een probleem waar ik niet uitkwam
+
+
+### Offline Feedback
+
+
+
+
+## Bronnen
+1. [Intro to service worken and chache](https://www.youtube.com/watch?v=ksXwaWHCW6k&t=1520s)
+2. [Cache update & Refresh](https://serviceworke.rs/strategy-cache-update-and-refresh_service-worker_doc.html)
+
 
 #### Resources
 
 ### Opdracht 2: Installeer jou app op een online webserver
-Installeer je app op een online webserver. Dan kan de web app niet alleen lokaal maar ook online bekeken worden.
 
-Dit kan bijvoorbeeld bij Digital Ocean of Netlify.
-
-#### Resources
-
-
-
-
-<!-- Bindings -->
-[opdracht1]: https://github.com/cmda-minor-web/performance-matters-1819/blob/master/week-3.md#opdracht-1-implementeer-een-service-worker
-[opdracht2]: https://github.com/cmda-minor-web/performance-matters-1819/blob/master/week-3.md#opdracht-2-installeer-jou-app-op-een-online-webserver
-
-
+[Check de site hier!](https://performancematters-bnyqcedoko.now.sh/)
